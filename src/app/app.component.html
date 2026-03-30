@@ -1,0 +1,469 @@
+<div
+  class="page"
+  [class.page--nav-scrolled]="navScrolled"
+  [class.page--nav-open]="navOpen">
+  <header class="nav">
+    <a class="nav__brand" href="#top" (click)="closeNav()">
+      <span class="nav__logo">SportMatch</span>
+      <span class="nav__by">× SportSync Connect</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#gap">The gap</a>
+      <a href="#platform">Platform</a>
+      <a href="#ai">AI</a>
+      <a href="#market">Market</a>
+      <a href="#vision">Vision</a>
+    </nav>
+    <a class="btn btn--ghost nav__cta-desktop" href="#cta">Get early access</a>
+    <button
+      type="button"
+      class="nav__burger"
+      (click)="toggleNav()"
+      [attr.aria-expanded]="navOpen"
+      aria-controls="mobile-nav"
+      aria-label="Open menu">
+      <span class="nav__burger-lines" aria-hidden="true"></span>
+    </button>
+  </header>
+
+  <div
+    class="nav__backdrop"
+    [class.nav__backdrop--visible]="navOpen"
+    (click)="closeNav()"
+    aria-hidden="true"></div>
+
+  <div
+    id="mobile-nav"
+    class="nav__drawer"
+    [class.nav__drawer--open]="navOpen"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Site navigation"
+    [attr.aria-hidden]="!navOpen"
+    [attr.inert]="!navOpen ? '' : null">
+    <nav class="nav__drawer-inner" aria-label="Mobile primary">
+      <a href="#gap" (click)="closeNav()">The gap</a>
+      <a href="#platform" (click)="closeNav()">Platform</a>
+      <a href="#features" (click)="closeNav()">Features</a>
+      <a href="#how" (click)="closeNav()">How it works</a>
+      <a href="#ai" (click)="closeNav()">AI</a>
+      <a href="#market" (click)="closeNav()">Market</a>
+      <a href="#revenue" (click)="closeNav()">Revenue</a>
+      <a href="#vision" (click)="closeNav()">Vision</a>
+      <a class="btn btn--primary nav__drawer-cta" href="#cta" (click)="closeNav()">Get early access</a>
+    </nav>
+  </div>
+
+  <main id="top">
+    <section class="hero" aria-label="Introduction">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__orbs" aria-hidden="true">
+        <span class="hero__orb hero__orb--1"></span>
+        <span class="hero__orb hero__orb--2"></span>
+        <span class="hero__orb hero__orb--3"></span>
+      </div>
+      <div class="hero__inner">
+        <p class="hero__eyebrow" [@heroLine]>Connect athletes, coaches &amp; opportunities</p>
+        <h1 class="hero__title" [@heroSub]>
+          <span class="hero__title-strong">SportMatch</span>
+          <span class="hero__title-rest"> — your path from invisible talent to signed opportunity.</span>
+        </h1>
+        <p class="hero__lede" [@heroSub]>
+          An AI-powered discovery platform plus <strong>SportSync Connect</strong>: the networking hub
+          where verified profiles, clubs, and showcases meet — like LinkedIn meets ESPN for sports.
+        </p>
+        <div class="hero__actions" [@heroCtas]>
+          <a class="btn btn--primary" href="#cta">Join the waitlist</a>
+          <a class="btn btn--outline" href="#how">See how it works</a>
+        </div>
+        <ul class="hero__badges" appScrollReveal>
+          <li>Verified athlete profiles</li>
+          <li>AI performance analysis</li>
+          <li>Smart scout &amp; recruit</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="gap" class="section section--tight">
+      <div class="section__head" appScrollReveal>
+        <h2>The gap in sports talent discovery</h2>
+        <p class="section__sub">
+          No stage for talent, no path to success — rooted in the reality SportSync Connect was built to fix.
+        </p>
+      </div>
+      <div class="cards cards--gap">
+        <article class="card card--problem" appScrollReveal [appScrollRevealDelay]="80">
+          <h3>Invisible talent</h3>
+          <p>
+            Millions of skilled athletes — especially in rural and underserved areas — never get discovered.
+            Clubs spend heavily on outdated scout networks; social buries real merit.
+          </p>
+        </article>
+        <article class="card card--problem" appScrollReveal [appScrollRevealDelay]="140">
+          <h3>Broken networks</h3>
+          <p>
+            LinkedIn ignores sports. Academies stay costly and inaccessible. There is no unified place for
+            skill verification, performance data, and direct athlete–club connections.
+          </p>
+        </article>
+        <article class="card card--problem" appScrollReveal [appScrollRevealDelay]="200">
+          <h3>300M+ athletes in India alone</h3>
+          <p>
+            Limited academy seats and fragmented discovery mean a massive untapped pool with no digital home —
+            while globally <strong>1.5B</strong> people play sports and only a fraction get seen.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="platform" class="section section--dark">
+      <div class="section__head" appScrollReveal>
+        <h2>One platform, two breakthroughs</h2>
+        <p class="section__sub">
+          <strong>SportMatch</strong> removes the barrier between potential and pro-level feedback.
+          <strong>SportSync Connect</strong> is the networking layer: profiles, trials, events, and community.
+        </p>
+      </div>
+      <div class="split">
+        <div class="split__col" appScrollReveal>
+          <h3 class="split__label">SportMatch</h3>
+          <ul class="checklist">
+            <li><strong>Verified athlete profiles</strong> — video, credentials, AI-backed performance signals.</li>
+            <li><strong>AI performance analysis</strong> — computer vision turns phone footage into pro-grade reports.</li>
+            <li><strong>Smart talent discovery</strong> — coaches search, filter, and recruit in one pipeline.</li>
+          </ul>
+        </div>
+        <div class="split__col" appScrollReveal [appScrollRevealDelay]="100">
+          <h3 class="split__label">SportSync Connect</h3>
+          <ul class="checklist">
+            <li><strong>Verified profiles</strong> — stats, videos, achievements in one place.</li>
+            <li><strong>Direct hiring</strong> — clubs post trials, contracts, and opportunities.</li>
+            <li><strong>Talent showcases</strong> — regional events built for scouting.</li>
+            <li><strong>Community hub</strong> — peers, coaches, and fans in a trusted network.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="section__head" appScrollReveal>
+        <h2>App experience — built for athletes, by athletes</h2>
+        <p class="section__sub">The SportSync Connect surface area, powered by SportMatch intelligence underneath.</p>
+      </div>
+      <div class="feature-grid">
+        <article appScrollReveal [appScrollRevealDelay]="60">
+          <span class="feature-grid__icon" aria-hidden="true">◆</span>
+          <h3>Profile builder</h3>
+          <p>Upload stats, videos, and certifications — verification that travels with the athlete.</p>
+        </article>
+        <article appScrollReveal [appScrollRevealDelay]="120">
+          <span class="feature-grid__icon" aria-hidden="true">◇</span>
+          <h3>Opportunity board</h3>
+          <p>Browse trials, sponsorships, and roles matched to your sport and level.</p>
+        </article>
+        <article appScrollReveal [appScrollRevealDelay]="180">
+          <span class="feature-grid__icon" aria-hidden="true">◎</span>
+          <h3>Event portal</h3>
+          <p>Register for showcases, track scores, and get in front of decision-makers.</p>
+        </article>
+        <article appScrollReveal [appScrollRevealDelay]="240">
+          <span class="feature-grid__icon" aria-hidden="true">⟡</span>
+          <h3>Connect hub</h3>
+          <p>Message clubs, coaches, and teammates without losing context.</p>
+        </article>
+        <article appScrollReveal [appScrollRevealDelay]="300">
+          <span class="feature-grid__icon" aria-hidden="true">▣</span>
+          <h3>Analytics dashboard</h3>
+          <p>Monitor performance trends and visibility — who’s viewing your profile and why.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="how" class="section section--band">
+      <div class="section__head" appScrollReveal>
+        <h2>How it works</h2>
+        <p class="section__sub">Parallel journeys for athletes and coaches — from first upload to signed opportunity.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="steps-card" appScrollReveal>
+          <h3>For athletes</h3>
+          <ol class="steps">
+            <li><span>01</span> Create a verified profile</li>
+            <li><span>02</span> Upload performance videos</li>
+            <li><span>03</span> Receive AI skill analysis</li>
+            <li><span>04</span> Browse coaching opportunities &amp; challenges</li>
+            <li><span>05</span> Connect directly with coaches &amp; clubs</li>
+          </ol>
+        </div>
+        <div class="steps-card" appScrollReveal [appScrollRevealDelay]="80">
+          <h3>For coaches &amp; clubs</h3>
+          <ol class="steps">
+            <li><span>01</span> Search the athlete database</li>
+            <li><span>02</span> Filter by skill level &amp; location</li>
+            <li><span>03</span> Review AI-generated metrics</li>
+            <li><span>04</span> Message players &amp; post sessions</li>
+            <li><span>05</span> Manage and track recruits</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="ai" class="section section--dark">
+      <div class="section__head" appScrollReveal>
+        <h2>AI skill analysis</h2>
+        <p class="section__sub">
+          Our computer vision stack turns a smartphone clip into benchmarks, metrics, and an improvement plan —
+          feedback once reserved for athletes with expensive personal coaches.
+        </p>
+      </div>
+      <div class="pipeline" appScrollReveal>
+        <div class="pipeline__node pipeline__node--pulse">
+          <span>Upload video</span>
+        </div>
+        <div class="pipeline__arrow" aria-hidden="true"></div>
+        <div class="pipeline__node">
+          <span>Vision analysis</span>
+        </div>
+        <div class="pipeline__arrow" aria-hidden="true"></div>
+        <div class="pipeline__node">
+          <span>Performance metrics</span>
+        </div>
+        <div class="pipeline__arrow" aria-hidden="true"></div>
+        <div class="pipeline__node">
+          <span>Pro benchmarking</span>
+        </div>
+        <div class="pipeline__arrow" aria-hidden="true"></div>
+        <div class="pipeline__node pipeline__node--accent">
+          <span>Improvement plan</span>
+        </div>
+      </div>
+      <p class="section__footnote" appScrollReveal [appScrollRevealDelay]="120">
+        Phase&nbsp;1 sports: <strong>Cricket</strong> (massive scouting demand), <strong>Football</strong> (rapid youth growth),
+        and <strong>E-sports</strong> (40M+ players, highest growth segment).
+      </p>
+    </section>
+
+    <section id="market" class="section">
+      <div class="section__head" appScrollReveal>
+        <h2>Market &amp; momentum</h2>
+        <p class="section__sub">
+          India-focused launch with a clear expansion path — capturing a scalable, high-margin niche.
+        </p>
+      </div>
+      <div class="stat-grid">
+        <div class="stat" appScrollReveal>
+          <span class="stat__value">5M+</span>
+          <span class="stat__label">Amateur athletes (India framing, SportMatch deck)</span>
+        </div>
+        <div class="stat" appScrollReveal [appScrollRevealDelay]="60">
+          <span class="stat__value">40M+</span>
+          <span class="stat__label">E-sports players + youth participation surge</span>
+        </div>
+        <div class="stat" appScrollReveal [appScrollRevealDelay]="120">
+          <span class="stat__value">₹500Cr</span>
+          <span class="stat__label">Training market signal — room for digital discovery</span>
+        </div>
+        <div class="stat" appScrollReveal [appScrollRevealDelay]="180">
+          <span class="stat__value">$7B</span>
+          <span class="stat__label">Niche opportunity — SportSync global framing</span>
+        </div>
+      </div>
+      <div class="dice card card--inset" appScrollReveal [appScrollRevealDelay]="100">
+        <h3>Execution lens (DICE-style scoring)</h3>
+        <p class="dice__formula">
+          Depth (2) + Insight (3) + Commitment (2) + Execution (2) = <strong>9</strong>
+        </p>
+        <ul class="dice__legend">
+          <li><strong>4–7</strong> — High likelihood of success</li>
+          <li><strong>8–11</strong> — Moderate; success with adjustments</li>
+          <li><strong>12–16</strong> — Low; significant hurdles</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="revenue" class="section section--band">
+      <div class="section__head" appScrollReveal>
+        <h2>Revenue — scalable &amp; diversified</h2>
+        <p class="section__sub">Combined view of SportMatch streams and SportSync Connect monetization.</p>
+      </div>
+      <div class="rev-grid">
+        <article appScrollReveal [appScrollRevealDelay]="40">
+          <h3>Premium players</h3>
+          <p>₹199–499/mo — verified profile, advanced AI, premium challenges.</p>
+        </article>
+        <article appScrollReveal [appScrollRevealDelay]="90">
+          <h3>Coach &amp; club subscriptions</h3>
+          <p>₹1,000–5,000/mo database access; ₹4,000/mo unlimited posts (Connect tier).</p>
+        </article>
+        <article appScrollReveal [appScrollRevealDelay]="140">
+          <h3>Session commission</h3>
+          <p>15% on coaching sessions booked through the platform.</p>
+        </article>
+        <article appScrollReveal [appScrollRevealDelay]="190">
+          <h3>Showcases &amp; sponsors</h3>
+          <p>Brand sponsorships for skill challenges; ₹1–5L per showcase event tier.</p>
+        </article>
+        <article appScrollReveal [appScrollRevealDelay]="240">
+          <h3>Ads &amp; marketplace</h3>
+          <p>Sports brand placements; ~₹8K/mo placements for gear &amp; academies.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="value" class="section">
+      <div class="section__head" appScrollReveal>
+        <h2>Why people will pay</h2>
+      </div>
+      <div class="split split--value">
+        <div appScrollReveal>
+          <h3>Athletes</h3>
+          <ul class="bullets">
+            <li>Nationwide visibility to coaches &amp; scouts</li>
+            <li>AI insights previously locked in elite academies</li>
+            <li>Trials, challenges, and competitive exposure</li>
+          </ul>
+        </div>
+        <div appScrollReveal [appScrollRevealDelay]="80">
+          <h3>Coaches &amp; clubs</h3>
+          <ul class="bullets">
+            <li>Up to ~80% less time &amp; cost vs traditional scouting</li>
+            <li>AI-verified reports instead of manual guesswork</li>
+            <li>Filtered pipeline by location, sport, and skill level</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="section section--dark">
+      <div class="section__head" appScrollReveal>
+        <h2>Team &amp; go-to-market</h2>
+        <p class="section__sub">Lean core team across product, sport domain, and growth.</p>
+      </div>
+      <div class="team-bands">
+        <div class="team-band" appScrollReveal>
+          <span class="team-band__n">3</span>
+          <div>
+            <strong>Engineers</strong>
+            <span>AI, backend &amp; mobile</span>
+          </div>
+        </div>
+        <div class="team-band" appScrollReveal [appScrollRevealDelay]="60">
+          <span class="team-band__n">2</span>
+          <div>
+            <strong>Sports experts</strong>
+            <span>Cricket, football &amp; esports</span>
+          </div>
+        </div>
+        <div class="team-band" appScrollReveal [appScrollRevealDelay]="120">
+          <span class="team-band__n">2</span>
+          <div>
+            <strong>Product &amp; design</strong>
+            <span>UX, strategy &amp; identity</span>
+          </div>
+        </div>
+        <div class="team-band" appScrollReveal [appScrollRevealDelay]="180">
+          <span class="team-band__n">3</span>
+          <div>
+            <strong>Growth &amp; ops</strong>
+            <span>Acquisition, sales &amp; operations</span>
+          </div>
+        </div>
+      </div>
+      <div class="timeline" appScrollReveal [appScrollRevealDelay]="120">
+        <div class="timeline__item">
+          <span class="timeline__phase">Months 1–3</span>
+          <p>MVP — cricket, football &amp; esports in three pilot cities.</p>
+        </div>
+        <div class="timeline__item">
+          <span class="timeline__phase">Month 12</span>
+          <p>National expansion across India with full platform features.</p>
+        </div>
+        <div class="timeline__item">
+          <span class="timeline__phase">Year 2</span>
+          <p>More sports; international exploration begins.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="funds" class="section">
+      <div class="section__head" appScrollReveal>
+        <h2>Capital &amp; use of funds</h2>
+        <p class="section__sub">Seed roadmap (SportMatch) aligned with launch budget (SportSync Connect).</p>
+      </div>
+      <div class="funds-grid">
+        <div class="funds-highlight" appScrollReveal>
+          <div>
+            <span class="funds-highlight__label">Seed ask (illustrative)</span>
+            <span class="funds-highlight__value">₹50L</span>
+            <span class="funds-highlight__note">~$60K USD — SportMatch deck</span>
+          </div>
+          <div>
+            <span class="funds-highlight__label">Launch budget</span>
+            <span class="funds-highlight__value">₹20L</span>
+            <span class="funds-highlight__note">Lean plan — SportSync Connect</span>
+          </div>
+        </div>
+        <div class="funds-bars" appScrollReveal [appScrollRevealDelay]="80">
+          <div class="funds-bar">
+            <span class="funds-bar__label">Product &amp; AI</span>
+            <div class="funds-bar__track"><div class="funds-bar__fill" style="width: 40%"></div></div>
+            <span class="funds-bar__pct">40%</span>
+          </div>
+          <div class="funds-bar">
+            <span class="funds-bar__label">User acquisition</span>
+            <div class="funds-bar__track"><div class="funds-bar__fill funds-bar__fill--2" style="width: 35%"></div></div>
+            <span class="funds-bar__pct">35%</span>
+          </div>
+          <div class="funds-bar">
+            <span class="funds-bar__label">Team &amp; operations</span>
+            <div class="funds-bar__track"><div class="funds-bar__fill funds-bar__fill--3" style="width: 25%"></div></div>
+            <span class="funds-bar__pct">25%</span>
+          </div>
+        </div>
+        <div class="funds-connect card card--inset" appScrollReveal [appScrollRevealDelay]="140">
+          <h3>SportSync ₹20L breakdown</h3>
+          <ul class="bullets bullets--compact">
+            <li><strong>₹8L (40%)</strong> — App development (iOS / Android / web)</li>
+            <li><strong>₹5L (25%)</strong> — Ten campus showcases</li>
+            <li><strong>₹4L (20%)</strong> — Marketing, ads &amp; ambassadors</li>
+            <li><strong>₹2L (10%)</strong> — Operations, team, legal</li>
+            <li><strong>₹1L (5%)</strong> — Buffer</li>
+          </ul>
+        </div>
+      </div>
+      <p class="section__footnote muted" appScrollReveal>
+        Revenue milestones (deck): Year 1 <strong>₹75L</strong> → Year 2 <strong>₹3Cr</strong> → Year 3 <strong>₹8Cr</strong> (targets for planning, not guarantees).
+      </p>
+    </section>
+
+    <section id="vision" class="section section--dark section--vision">
+      <div class="vision__inner" appScrollReveal>
+        <h2>Our vision</h2>
+        <p class="vision__quote">
+          Turn every smartphone into a <strong>global scouting network</strong>. Democratize discovery so the next
+          champion — on the pitch or in esports — never goes unnoticed.
+        </p>
+        <p class="vision__tag">
+          Let’s make every athlete shine. SportMatch × SportSync Connect — unite talent and opportunity.
+        </p>
+      </div>
+    </section>
+
+    <section id="cta" class="cta">
+      <div class="cta__panel" appScrollReveal>
+        <h2>Be part of the next breakthrough story</h2>
+        <p>Early access for athletes, coaches, clubs, and partners. Thank you — together we redefine sports.</p>
+        <form class="cta__form" (submit)="$event.preventDefault()">
+          <label class="sr-only" for="email">Email</label>
+          <input id="email" type="email" autocomplete="email" placeholder="you@club.com" />
+          <button type="submit" class="btn btn--primary">Request invite</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© {{ year }} SportMatch · SportSync Connect · Landing for illustrative purposes</p>
+  </footer>
+</div>
