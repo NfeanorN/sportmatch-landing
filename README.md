@@ -12,9 +12,15 @@ _(GitHub normalizes the username in the URL; the repo is [NfeanorN/sportmatch-la
 
 ### Enable GitHub Pages (one time)
 
-1. Repo **Settings** → **Pages** → **Build and deployment**
-2. **Source**: choose **GitHub Actions** (not “Deploy from a branch”)
-3. Push to `main` — workflow **Deploy to GitHub Pages** builds and publishes automatically
+Workflow пушит сборку в ветку **`gh-pages`**. Включите Pages так:
+
+1. Откройте **Settings** → **Pages**:  
+   `https://github.com/NfeanorN/sportmatch-landing/settings/pages`
+2. **Build and deployment** → **Source**: выберите **Deploy from a branch**
+3. **Branch**: **`gh-pages`** / папка **`/ (root)`** → **Save**
+4. После первого успешного запуска Actions ветка `gh-pages` появится сама; если её ещё нет, сделайте **Actions** → **Deploy to GitHub Pages** → **Run workflow**
+
+Раньше использовался `actions/deploy-pages` — он даёт **404**, пока в настройках не выбран источник **GitHub Actions**; вариант с веткой **`gh-pages`** проще и не требует этого.
 
 Local build matching Pages:
 
