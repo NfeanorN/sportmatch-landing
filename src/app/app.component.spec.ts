@@ -19,6 +19,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.hero__title')?.textContent).toContain('SportMatch');
+    expect(compiled.querySelector('.hero__title')?.textContent).toContain('SportSync Connect Italia');
   });
 });

@@ -565,6 +565,11 @@ main {
   margin-bottom: 2.5rem;
 }
 
+.section__head--tight {
+  margin-top: 2.75rem;
+  margin-bottom: 1.5rem;
+}
+
 .section__head h2 {
   font-family: var(--font-display);
   font-size: clamp(1.65rem, 3.5vw, 2.35rem);
@@ -641,6 +646,16 @@ main {
 @media (min-width: 768px) {
   .split {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .split--three {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .split--three {
+    gap: 1.5rem;
   }
 }
 
@@ -736,6 +751,30 @@ main {
   color: var(--muted);
   font-size: 0.92rem;
   line-height: 1.55;
+}
+
+.italy-strip {
+  max-width: 900px;
+  margin: 2.25rem auto 0;
+  padding: 1.35rem 1.5rem;
+}
+
+.italy-strip h3 {
+  font-family: var(--font-display);
+  margin: 0 0 0.75rem;
+  font-size: 1.05rem;
+}
+
+.bullets--columns {
+  column-count: 1;
+  padding-left: 1.1rem;
+}
+
+@media (min-width: 640px) {
+  .bullets--columns {
+    column-count: 2;
+    column-gap: 2rem;
+  }
 }
 
 .steps-grid {
@@ -901,24 +940,36 @@ main {
   line-height: 1.45;
 }
 
-.dice h3 {
+.market-sizing h3 {
   font-family: var(--font-display);
   margin: 0 0 0.5rem;
   font-size: 1.05rem;
 }
 
-.dice__formula {
-  margin: 0 0 0.75rem;
+.market-sizing__lead {
+  margin: 0 0 0.85rem;
   color: var(--muted);
   font-size: 0.95rem;
+  line-height: 1.55;
 }
 
-.dice__legend {
+.market-sizing__legend {
   margin: 0;
   padding-left: 1.1rem;
   color: var(--muted);
   font-size: 0.9rem;
   line-height: 1.5;
+}
+
+.gtm-notes {
+  max-width: 720px;
+  margin: 2rem auto 0;
+}
+
+.gtm-notes h3 {
+  font-family: var(--font-display);
+  margin: 0 0 0.65rem;
+  font-size: 1.05rem;
 }
 
 .rev-grid {

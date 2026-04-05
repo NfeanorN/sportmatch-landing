@@ -4,8 +4,8 @@
   [class.page--nav-open]="navOpen">
   <header class="nav">
     <a class="nav__brand" href="#top" (click)="closeNav()">
-      <span class="nav__logo">SportMatch</span>
-      <span class="nav__by">× SportSync Connect</span>
+      <span class="nav__logo">SportSync Connect Italia</span>
+      <span class="nav__by">Where champions are discovered</span>
     </a>
     <nav class="nav__links" aria-label="Primary">
       <a href="#gap">The gap</a>
@@ -44,11 +44,12 @@
     <nav class="nav__drawer-inner" aria-label="Mobile primary">
       <a href="#gap" (click)="closeNav()">The gap</a>
       <a href="#platform" (click)="closeNav()">Platform</a>
-      <a href="#features" (click)="closeNav()">Features</a>
       <a href="#how" (click)="closeNav()">How it works</a>
       <a href="#ai" (click)="closeNav()">AI</a>
       <a href="#market" (click)="closeNav()">Market</a>
       <a href="#revenue" (click)="closeNav()">Revenue</a>
+      <a href="#roadmap" (click)="closeNav()">Go-to-market</a>
+      <a href="#funds" (click)="closeNav()">Funding</a>
       <a href="#vision" (click)="closeNav()">Vision</a>
       <a class="btn btn--primary nav__drawer-cta" href="#cta" (click)="closeNav()">Get early access</a>
     </nav>
@@ -64,54 +65,56 @@
         <span class="hero__orb hero__orb--3"></span>
       </div>
       <div class="hero__inner">
-        <p class="hero__eyebrow" [@heroLine]>Connect athletes, coaches &amp; opportunities</p>
+        <p class="hero__eyebrow" [@heroLine]>
+          Bridging the gap between Italian athletic talent &amp; opportunity
+        </p>
         <h1 class="hero__title" [@heroSub]>
-          <span class="hero__title-strong">SportMatch</span>
-          <span class="hero__title-rest"> — your path from invisible talent to signed opportunity.</span>
+          <span class="hero__title-strong">SportSync Connect Italia</span>
+          <span class="hero__title-rest"> — the digital infrastructure Italy’s sports ecosystem has been missing.</span>
         </h1>
         <p class="hero__lede" [@heroSub]>
-          An AI-powered discovery platform plus <strong>SportSync Connect</strong>: the networking hub
-          where verified profiles, clubs, and showcases meet — like LinkedIn meets ESPN for sports.
+          Over <strong>21&nbsp;million</strong> Italians actively play sports (37.5% of the population, Il Sole 24 Ore, 2024), yet discovery stays fragmented, expensive, and tied to geography — not merit.
+          We combine <strong>LinkedIn-style networking</strong>, <strong>sports-centric profiles</strong>, and <strong>smart scouting</strong> in one freemium hub (athlete premium from <strong>€9.99/mo</strong>).
         </p>
         <div class="hero__actions" [@heroCtas]>
           <a class="btn btn--primary" href="#cta">Join the waitlist</a>
           <a class="btn btn--outline" href="#how">See how it works</a>
         </div>
         <ul class="hero__badges" appScrollReveal>
-          <li>Verified athlete profiles</li>
-          <li>AI performance analysis</li>
-          <li>Smart scout &amp; recruit</li>
+          <li>CONI-scale verification roadmap</li>
+          <li>AI Scout Match</li>
+          <li>Talent showcases — Milan, Rome &amp; more</li>
         </ul>
       </div>
     </section>
 
     <section id="gap" class="section section--tight">
       <div class="section__head" appScrollReveal>
-        <h2>The gap in sports talent discovery</h2>
+        <h2>The gap in Italian sports talent discovery</h2>
         <p class="section__sub">
-          No stage for talent, no path to success — rooted in the reality SportSync Connect was built to fix.
+          Success still depends too often on location, budget, and local networks — not potential. Thousands of capable athletes slip through the pipeline every year.
         </p>
       </div>
       <div class="cards cards--gap">
         <article class="card card--problem" appScrollReveal [appScrollRevealDelay]="80">
-          <h3>Invisible talent</h3>
+          <h3>Fragmentation &amp; cost</h3>
           <p>
-            Millions of skilled athletes — especially in rural and underserved areas — never get discovered.
-            Clubs spend heavily on outdated scout networks; social buries real merit.
+            <strong>4.7&nbsp;million</strong> officially registered athletes (CONI) across 45+ federations — yet no unified digital home to showcase talent holistically.
+            Enterprise tools like Wyscout / Hudl run <strong>€500–2,000+/year</strong> and target clubs and analysts, not grassroots athletes.
           </p>
         </article>
         <article class="card card--problem" appScrollReveal [appScrollRevealDelay]="140">
-          <h3>Broken networks</h3>
+          <h3>Wrong tools for athletes</h3>
           <p>
-            LinkedIn ignores sports. Academies stay costly and inaccessible. There is no unified place for
-            skill verification, performance data, and direct athlete–club connections.
+            LinkedIn ignores sports-specific portfolios. Instagram and TikTok bury athletic merit in algorithmic noise.
+            Youth football alone has <strong>700,000+</strong> registered players (2023/24) but most never get visibility beyond their local club.
           </p>
         </article>
         <article class="card card--problem" appScrollReveal [appScrollRevealDelay]="200">
-          <h3>300M+ athletes in India alone</h3>
+          <h3>North–South &amp; rural access</h3>
           <p>
-            Limited academy seats and fragmented discovery mean a massive untapped pool with no digital home —
-            while globally <strong>1.5B</strong> people play sports and only a fraction get seen.
+            Quality academies, showcases, and top scouts cluster in the industrial North — while rural and southern athletes face extreme access barriers.
+            Clubs still lean on costly physical scouting; Serie A/B/C budgets for scouting and transfers run into the <strong>hundreds of millions</strong> annually.
           </p>
         </article>
       </div>
@@ -119,91 +122,130 @@
 
     <section id="platform" class="section section--dark">
       <div class="section__head" appScrollReveal>
-        <h2>One platform, two breakthroughs</h2>
+        <h2>One platform: professional networking for sports</h2>
         <p class="section__sub">
-          <strong>SportMatch</strong> removes the barrier between potential and pro-level feedback.
-          <strong>SportSync Connect</strong> is the networking layer: profiles, trials, events, and community.
+          <strong>SportSync Connect Italia</strong> is built as the all-in-one athlete hub: verified profiles, opportunities, video, marketplace, and AI-assisted matching — democratizing access Wyscout and generic social cannot offer.
         </p>
       </div>
       <div class="split">
         <div class="split__col" appScrollReveal>
-          <h3 class="split__label">SportMatch</h3>
+          <h3 class="split__label">For athletes</h3>
           <ul class="checklist">
-            <li><strong>Verified athlete profiles</strong> — video, credentials, AI-backed performance signals.</li>
-            <li><strong>AI performance analysis</strong> — computer vision turns phone footage into pro-grade reports.</li>
-            <li><strong>Smart talent discovery</strong> — coaches search, filter, and recruit in one pipeline.</li>
+            <li>
+              <strong>Verified athlete profiles</strong> — stats, performance video, medical certifications, and achievements in one standardized portfolio.
+            </li>
+            <li>
+              <strong>Video highlight reel</strong> — native hosting to upload, trim, and showcase match and training clips.
+            </li>
+            <li>
+              <strong>Leaderboards &amp; rankings</strong> — regional and national momentum from verified stats and engagement.
+            </li>
           </ul>
         </div>
         <div class="split__col" appScrollReveal [appScrollRevealDelay]="100">
-          <h3 class="split__label">SportSync Connect</h3>
+          <h3 class="split__label">For clubs &amp; brands</h3>
           <ul class="checklist">
-            <li><strong>Verified profiles</strong> — stats, videos, achievements in one place.</li>
-            <li><strong>Direct hiring</strong> — clubs post trials, contracts, and opportunities.</li>
-            <li><strong>Talent showcases</strong> — regional events built for scouting.</li>
-            <li><strong>Community hub</strong> — peers, coaches, and fans in a trusted network.</li>
+            <li>
+              <strong>Opportunity board</strong> — trials, contracts, scholarships, and squad vacancies in one transparent feed.
+            </li>
+            <li>
+              <strong>Club Scout Portal</strong> — a budget-friendly B2B view aimed especially at Serie B &amp; C margins.
+            </li>
+            <li>
+              <strong>Sports marketplace</strong> — gear, academies, and coaching services — an extra revenue line and ecosystem lock-in.
+            </li>
           </ul>
         </div>
       </div>
-    </section>
 
-    <section id="features" class="section">
-      <div class="section__head" appScrollReveal>
-        <h2>App experience — built for athletes, by athletes</h2>
-        <p class="section__sub">The SportSync Connect surface area, powered by SportMatch intelligence underneath.</p>
+      <div class="section__head section__head--tight" appScrollReveal>
+        <h2>Core product surface</h2>
+        <p class="section__sub">Every feature in the Italia MVP roadmap maps to a clear user outcome.</p>
       </div>
       <div class="feature-grid">
-        <article appScrollReveal [appScrollRevealDelay]="60">
-          <span class="feature-grid__icon" aria-hidden="true">◆</span>
-          <h3>Profile builder</h3>
-          <p>Upload stats, videos, and certifications — verification that travels with the athlete.</p>
+        <article appScrollReveal [appScrollRevealDelay]="40">
+          <span class="feature-grid__icon" aria-hidden="true">🏅</span>
+          <h3>Verified athlete profiles</h3>
+          <p>Central hub for stats, video, medical certs, and competitive history — a credible digital CV for any sport.</p>
+        </article>
+        <article appScrollReveal [appScrollRevealDelay]="80">
+          <span class="feature-grid__icon" aria-hidden="true">📋</span>
+          <h3>Opportunity board</h3>
+          <p>Trials, standard contracts, scholarships, and vacancies — direct access without relying solely on agents.</p>
         </article>
         <article appScrollReveal [appScrollRevealDelay]="120">
-          <span class="feature-grid__icon" aria-hidden="true">◇</span>
-          <h3>Opportunity board</h3>
-          <p>Browse trials, sponsorships, and roles matched to your sport and level.</p>
+          <span class="feature-grid__icon" aria-hidden="true">📊</span>
+          <h3>Analytics dashboard</h3>
+          <p>Profile views, engagement, and progression metrics for data-driven career management.</p>
         </article>
-        <article appScrollReveal [appScrollRevealDelay]="180">
-          <span class="feature-grid__icon" aria-hidden="true">◎</span>
-          <h3>Event portal</h3>
-          <p>Register for showcases, track scores, and get in front of decision-makers.</p>
+        <article appScrollReveal [appScrollRevealDelay]="160">
+          <span class="feature-grid__icon" aria-hidden="true">🎪</span>
+          <h3>Talent showcase events</h3>
+          <p>Register for regional scouting events — Milan, Rome, Naples, Turin, Bologna, and beyond.</p>
+        </article>
+        <article appScrollReveal [appScrollRevealDelay]="200">
+          <span class="feature-grid__icon" aria-hidden="true">💬</span>
+          <h3>Connect hub</h3>
+          <p>Direct messaging with athletes, coaches, verified scouts, and fan communities — vertical, professional networking.</p>
         </article>
         <article appScrollReveal [appScrollRevealDelay]="240">
-          <span class="feature-grid__icon" aria-hidden="true">⟡</span>
-          <h3>Connect hub</h3>
-          <p>Message clubs, coaches, and teammates without losing context.</p>
+          <span class="feature-grid__icon" aria-hidden="true">🛒</span>
+          <h3>Sports marketplace</h3>
+          <p>Buy/sell gear, find academies, list coaching — a one-stop sports economy on the same platform.</p>
         </article>
-        <article appScrollReveal [appScrollRevealDelay]="300">
-          <span class="feature-grid__icon" aria-hidden="true">▣</span>
-          <h3>Analytics dashboard</h3>
-          <p>Monitor performance trends and visibility — who’s viewing your profile and why.</p>
+        <article appScrollReveal [appScrollRevealDelay]="280">
+          <span class="feature-grid__icon" aria-hidden="true">🤖</span>
+          <h3>AI Scout Match</h3>
+          <p>Proprietary matching of athletes to club needs and brand opportunities — less manual search for scouts.</p>
         </article>
+        <article appScrollReveal [appScrollRevealDelay]="320">
+          <span class="feature-grid__icon" aria-hidden="true">📹</span>
+          <h3>Video highlight reel</h3>
+          <p>Upload, trim, and present proof of performance — the visual layer recruiters actually watch.</p>
+        </article>
+        <article appScrollReveal [appScrollRevealDelay]="360">
+          <span class="feature-grid__icon" aria-hidden="true">🏆</span>
+          <h3>Leaderboards &amp; rankings</h3>
+          <p>Dynamic regional and national boards from verified stats — motivation and visibility for rising talent.</p>
+        </article>
+      </div>
+
+      <div class="italy-strip card card--inset" appScrollReveal [appScrollRevealDelay]="100">
+        <h3>Built for Italy</h3>
+        <ul class="bullets bullets--compact bullets--columns">
+          <li>Full Italian UX and localized sports terminology</li>
+          <li>Roadmap: CONI / FIG federation hooks for license verification and trusted data</li>
+          <li>Strict GDPR-by-design; AWS Europe (Frankfurt) for residency</li>
+          <li>Multi-sport support — football, basketball, volleyball, cycling, tennis, athletics</li>
+          <li><strong>Calcio-first MVP</strong> — lean into 700k+ youth football, expand other sports in Year 2</li>
+        </ul>
       </div>
     </section>
 
     <section id="how" class="section section--band">
       <div class="section__head" appScrollReveal>
         <h2>How it works</h2>
-        <p class="section__sub">Parallel journeys for athletes and coaches — from first upload to signed opportunity.</p>
+        <p class="section__sub">Parallel journeys for athletes and organizations — from profile to pitch-side opportunity.</p>
       </div>
       <div class="steps-grid">
         <div class="steps-card" appScrollReveal>
           <h3>For athletes</h3>
           <ol class="steps">
-            <li><span>01</span> Create a verified profile</li>
-            <li><span>02</span> Upload performance videos</li>
-            <li><span>03</span> Receive AI skill analysis</li>
-            <li><span>04</span> Browse coaching opportunities &amp; challenges</li>
-            <li><span>05</span> Connect directly with coaches &amp; clubs</li>
+            <li><span>01</span> Create a verified profile (stats, video, certs)</li>
+            <li><span>02</span> Upload and trim highlight reels</li>
+            <li><span>03</span> Get AI Scout Match suggestions &amp; visibility analytics</li>
+            <li><span>04</span> Browse the opportunity board &amp; register for showcases</li>
+            <li><span>05</span> Message clubs, scouts, and peers in Connect hub</li>
           </ol>
         </div>
         <div class="steps-card" appScrollReveal [appScrollRevealDelay]="80">
-          <h3>For coaches &amp; clubs</h3>
+          <h3>For clubs, academies &amp; brands</h3>
           <ol class="steps">
-            <li><span>01</span> Search the athlete database</li>
-            <li><span>02</span> Filter by skill level &amp; location</li>
-            <li><span>03</span> Review AI-generated metrics</li>
-            <li><span>04</span> Message players &amp; post sessions</li>
-            <li><span>05</span> Manage and track recruits</li>
+            <li><span>01</span> Use Scout Portal to search verified talent pools</li>
+            <li><span>02</span> Filter by sport, region, level, and federation data</li>
+            <li><span>03</span> Lean on AI matching for open roster needs</li>
+            <li><span>04</span> Post trials, contracts, and scholarships</li>
+            <li><span>05</span> Sponsor showcases &amp; marketplace placements</li>
           </ol>
         </div>
       </div>
@@ -211,229 +253,237 @@
 
     <section id="ai" class="section section--dark">
       <div class="section__head" appScrollReveal>
-        <h2>AI skill analysis</h2>
+        <h2>AI Scout Match &amp; intelligence layer</h2>
         <p class="section__sub">
-          Our computer vision stack turns a smartphone clip into benchmarks, metrics, and an improvement plan —
-          feedback once reserved for athletes with expensive personal coaches.
+          TensorFlow-powered models match athletes to club and brand opportunities; video and structured stats feed the same pipeline — less spreadsheet work, more time on human judgment.
         </p>
       </div>
       <div class="pipeline" appScrollReveal>
         <div class="pipeline__node pipeline__node--pulse">
-          <span>Upload video</span>
+          <span>Profile + video</span>
         </div>
         <div class="pipeline__arrow" aria-hidden="true"></div>
         <div class="pipeline__node">
-          <span>Vision analysis</span>
+          <span>Signals &amp; verification</span>
         </div>
         <div class="pipeline__arrow" aria-hidden="true"></div>
         <div class="pipeline__node">
-          <span>Performance metrics</span>
+          <span>AI matching engine</span>
         </div>
         <div class="pipeline__arrow" aria-hidden="true"></div>
         <div class="pipeline__node">
-          <span>Pro benchmarking</span>
+          <span>Club / brand fit</span>
         </div>
         <div class="pipeline__arrow" aria-hidden="true"></div>
         <div class="pipeline__node pipeline__node--accent">
-          <span>Improvement plan</span>
+          <span>Actionable shortlists</span>
         </div>
       </div>
       <p class="section__footnote" appScrollReveal [appScrollRevealDelay]="120">
-        Phase&nbsp;1 sports: <strong>Cricket</strong> (massive scouting demand), <strong>Football</strong> (rapid youth growth),
-        and <strong>E-sports</strong> (40M+ players, highest growth segment).
+        Stack direction: <strong>React Native</strong> apps, <strong>Node.js</strong> + <strong>Python</strong> backend, <strong>PostgreSQL</strong> + <strong>Redis</strong>, <strong>S3</strong> + <strong>CloudFront</strong> for video, <strong>Mixpanel</strong> + internal dashboards for analytics.
       </p>
     </section>
 
     <section id="market" class="section">
       <div class="section__head" appScrollReveal>
-        <h2>Market &amp; momentum</h2>
+        <h2>Market &amp; momentum — Italy</h2>
         <p class="section__sub">
-          India-focused launch with a clear expansion path — capturing a scalable, high-margin niche.
+          A passionate participant base, rising sports-tech investment, and no affordable, athlete-first networking incumbent — a clear blue-ocean wedge.
         </p>
       </div>
       <div class="stat-grid">
         <div class="stat" appScrollReveal>
-          <span class="stat__value">5M+</span>
-          <span class="stat__label">Amateur athletes (India framing, SportMatch deck)</span>
+          <span class="stat__value">21M+</span>
+          <span class="stat__label">Active sports participants (2024, Il Sole 24 Ore)</span>
         </div>
         <div class="stat" appScrollReveal [appScrollRevealDelay]="60">
-          <span class="stat__value">40M+</span>
-          <span class="stat__label">E-sports players + youth participation surge</span>
+          <span class="stat__value">4.7M</span>
+          <span class="stat__label">Registered CONI athletes — core addressable pool</span>
         </div>
         <div class="stat" appScrollReveal [appScrollRevealDelay]="120">
-          <span class="stat__value">₹500Cr</span>
-          <span class="stat__label">Training market signal — room for digital discovery</span>
+          <span class="stat__value">700k+</span>
+          <span class="stat__label">Youth football registrants (2023/24 season)</span>
         </div>
         <div class="stat" appScrollReveal [appScrollRevealDelay]="180">
-          <span class="stat__value">$7B</span>
-          <span class="stat__label">Niche opportunity — SportSync global framing</span>
+          <span class="stat__value">€1.5B</span>
+          <span class="stat__label">Italian VC into startups in 2024 (+28% YoY, ScaleUp Italy)</span>
         </div>
       </div>
-      <div class="dice card card--inset" appScrollReveal [appScrollRevealDelay]="100">
-        <h3>Execution lens (DICE-style scoring)</h3>
-        <p class="dice__formula">
-          Depth (2) + Insight (3) + Commitment (2) + Execution (2) = <strong>9</strong>
+      <div class="market-sizing card card--inset" appScrollReveal [appScrollRevealDelay]="100">
+        <h3>Market opportunity sizing</h3>
+        <p class="market-sizing__lead">
+          <strong>TAM</strong> €850M+ (Italian sports tech, analytics &amp; management software combined) ·
+          <strong>SAM</strong> €120M (networking, scouting platforms, athlete profiling) ·
+          <strong>SOM (Year 1)</strong> €2.5M — ~0.05% of CONI athletes plus 500 early-adopter clubs.
         </p>
-        <ul class="dice__legend">
-          <li><strong>4–7</strong> — High likelihood of success</li>
-          <li><strong>8–11</strong> — Moderate; success with adjustments</li>
-          <li><strong>12–16</strong> — Low; significant hurdles</li>
+        <ul class="market-sizing__legend">
+          <li>Italian sports market revenue (2025) ~USD <strong>$2.81B</strong> (Statista)</li>
+          <li>Sports technology in Italy to 2030: USD <strong>$920.3M</strong> market, <strong>21.8% CAGR</strong> (Grand View Research)</li>
         </ul>
       </div>
     </section>
 
     <section id="revenue" class="section section--band">
       <div class="section__head" appScrollReveal>
-        <h2>Revenue — scalable &amp; diversified</h2>
-        <p class="section__sub">Combined view of SportMatch streams and SportSync Connect monetization.</p>
+        <h2>Revenue — freemium core, diversified upside</h2>
+        <p class="section__sub">Year 1 model from the Italia plan: aggressive free tier for density, paid tiers for athletes, clubs, events, and marketplace.</p>
       </div>
       <div class="rev-grid">
         <article appScrollReveal [appScrollRevealDelay]="40">
-          <h3>Premium players</h3>
-          <p>₹199–499/mo — verified profile, advanced AI, premium challenges.</p>
+          <h3>Athlete premium</h3>
+          <p><strong>€9.99/mo</strong> — power features on top of a generous free base (plan: ~2k paying athletes in Y1).</p>
         </article>
         <article appScrollReveal [appScrollRevealDelay]="90">
-          <h3>Coach &amp; club subscriptions</h3>
-          <p>₹1,000–5,000/mo database access; ₹4,000/mo unlimited posts (Connect tier).</p>
+          <h3>Club membership (Pro / Academy)</h3>
+          <p><strong>€99/mo</strong> — Scout Portal and posting tools (plan: ~100 clubs in Y1).</p>
         </article>
         <article appScrollReveal [appScrollRevealDelay]="140">
-          <h3>Session commission</h3>
-          <p>15% on coaching sessions booked through the platform.</p>
+          <h3>Talent showcase sponsorships</h3>
+          <p><strong>€5k–15k</strong> per sponsored event — heritage gear partners (e.g. Puma Italia, Diadora, Lotto) and local brands.</p>
         </article>
         <article appScrollReveal [appScrollRevealDelay]="190">
-          <h3>Showcases &amp; sponsors</h3>
-          <p>Brand sponsorships for skill challenges; ₹1–5L per showcase event tier.</p>
-        </article>
-        <article appScrollReveal [appScrollRevealDelay]="240">
-          <h3>Ads &amp; marketplace</h3>
-          <p>Sports brand placements; ~₹8K/mo placements for gear &amp; academies.</p>
+          <h3>Marketplace advertising</h3>
+          <p><strong>€200/mo</strong> banners &amp; listings — gear, academies, agencies.</p>
         </article>
       </div>
+      <p class="section__footnote muted" appScrollReveal>
+        Illustrative Year 1 revenue stack in the plan totals <strong>~€528k</strong> gross at target adoption — not a guarantee; for planning and investor discussion only.
+      </p>
     </section>
 
     <section id="value" class="section">
       <div class="section__head" appScrollReveal>
-        <h2>Why people will pay</h2>
+        <h2>Three sides, one marketplace</h2>
       </div>
-      <div class="split split--value">
+      <div class="split split--value split--three">
         <div appScrollReveal>
-          <h3>Athletes</h3>
+          <h3>Athletes (B2C)</h3>
           <ul class="bullets">
-            <li>Nationwide visibility to coaches &amp; scouts</li>
-            <li>AI insights previously locked in elite academies</li>
-            <li>Trials, challenges, and competitive exposure</li>
+            <li>Ages <strong>16–35</strong> across major Italian sports — a mobile-native pool tied to CONI-scale participation</li>
+            <li>Professional pathways, validation, and visibility beyond the local club</li>
+            <li>Affordable alternative to enterprise scouting tools</li>
           </ul>
         </div>
         <div appScrollReveal [appScrollRevealDelay]="80">
-          <h3>Coaches &amp; clubs</h3>
+          <h3>Clubs &amp; academies (B2B)</h3>
           <ul class="bullets">
-            <li>Up to ~80% less time &amp; cost vs traditional scouting</li>
-            <li>AI-verified reports instead of manual guesswork</li>
-            <li>Filtered pipeline by location, sport, and skill level</li>
+            <li>100+ pro clubs (Serie A/B/C) plus thousands of amateur and youth sides</li>
+            <li>Centralized, data-aware scouting without replicating Milan-scale travel budgets</li>
+            <li>Transparent pipeline from digital discovery to trials</li>
+          </ul>
+        </div>
+        <div appScrollReveal [appScrollRevealDelay]="160">
+          <h3>Sponsors &amp; brands (B2B2C)</h3>
+          <ul class="bullets">
+            <li>Italian sportswear market ~<strong>€4.6B</strong> — equipment, nutrition, agencies</li>
+            <li>Grassroots sponsorships, product testing, early representation deals</li>
+            <li>Integrated storylines from showcases and leaderboards</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section id="team" class="section section--dark">
+    <section id="roadmap" class="section section--dark">
       <div class="section__head" appScrollReveal>
-        <h2>Team &amp; go-to-market</h2>
-        <p class="section__sub">Lean core team across product, sport domain, and growth.</p>
+        <h2>Go-to-market — three phases</h2>
+        <p class="section__sub">
+          Local density first: prove the model in Italy’s largest sporting hubs, then scale nationally and deepen federation partnerships.
+        </p>
       </div>
-      <div class="team-bands">
-        <div class="team-band" appScrollReveal>
-          <span class="team-band__n">3</span>
-          <div>
-            <strong>Engineers</strong>
-            <span>AI, backend &amp; mobile</span>
-          </div>
+      <div class="timeline" appScrollReveal>
+        <div class="timeline__item">
+          <span class="timeline__phase">Phase 1 — Months 1–6 · “Plant the flag”</span>
+          <p>
+            MVP in <strong>Milan &amp; Rome</strong>; 3–5 Serie B/C beta partners; 2–3 athlete ambassadors; 2 physical showcases; social on Instagram, TikTok, YouTube Shorts.
+            <strong>Target:</strong> 10k athletes, 50 club accounts.
+          </p>
         </div>
-        <div class="team-band" appScrollReveal [appScrollRevealDelay]="60">
-          <span class="team-band__n">2</span>
-          <div>
-            <strong>Sports experts</strong>
-            <span>Cricket, football &amp; esports</span>
-          </div>
+        <div class="timeline__item">
+          <span class="timeline__phase">Phase 2 — Months 7–18 · “Scale the network”</span>
+          <p>
+            Add <strong>Naples, Turin, Bologna, Florence</strong>; “SportSync Scouting Week” across five cities; B2B push to all 20 Serie B clubs (<strong>€99/mo</strong>); FIGC &amp; FIP partnership track; creator campaigns.
+            <strong>Target:</strong> 100k athletes, 200 clubs, 50 sponsors.
+          </p>
         </div>
-        <div class="team-band" appScrollReveal [appScrollRevealDelay]="120">
-          <span class="team-band__n">2</span>
-          <div>
-            <strong>Product &amp; design</strong>
-            <span>UX, strategy &amp; identity</span>
-          </div>
-        </div>
-        <div class="team-band" appScrollReveal [appScrollRevealDelay]="180">
-          <span class="team-band__n">3</span>
-          <div>
-            <strong>Growth &amp; ops</strong>
-            <span>Acquisition, sales &amp; operations</span>
-          </div>
+        <div class="timeline__item">
+          <span class="timeline__phase">Phase 3 — Months 19–36 · “Become the standard”</span>
+          <p>
+            Full support for five major sports verticals; premium analytics tier for Serie A; automated AI scouting reports; Series A fundraise (<strong>€2–5M</strong>) for EU expansion.
+            <strong>Target:</strong> 500k athletes, 1k active club accounts.
+          </p>
         </div>
       </div>
-      <div class="timeline" appScrollReveal [appScrollRevealDelay]="120">
-        <div class="timeline__item">
-          <span class="timeline__phase">Months 1–3</span>
-          <p>MVP — cricket, football &amp; esports in three pilot cities.</p>
-        </div>
-        <div class="timeline__item">
-          <span class="timeline__phase">Month 12</span>
-          <p>National expansion across India with full platform features.</p>
-        </div>
-        <div class="timeline__item">
-          <span class="timeline__phase">Year 2</span>
-          <p>More sports; international exploration begins.</p>
-        </div>
+      <div class="gtm-notes card card--inset" appScrollReveal [appScrollRevealDelay]="100">
+        <h3>Channels &amp; partnerships</h3>
+        <ul class="bullets bullets--compact">
+          <li>Marketing mix: social ads ~30%, showcases ~25%, influencers ~20%, SEO/ASO ~10%, B2B outreach ~10%, PR (e.g. Gazzetta, Sky Sport Italia) ~5%</li>
+          <li>Strategic targets: <strong>FIGC</strong>, <strong>CONI</strong>, <strong>Gazzetta dello Sport</strong>, Puma Italia / Diadora, universities (IUSM, Politecnico)</li>
+        </ul>
       </div>
     </section>
 
     <section id="funds" class="section">
       <div class="section__head" appScrollReveal>
-        <h2>Capital &amp; use of funds</h2>
-        <p class="section__sub">Seed roadmap (SportMatch) aligned with launch budget (SportSync Connect).</p>
+        <h2>Budget &amp; funding path</h2>
+        <p class="section__sub">Year 1 operating picture and capital strategy from the Italia business plan.</p>
       </div>
       <div class="funds-grid">
         <div class="funds-highlight" appScrollReveal>
           <div>
-            <span class="funds-highlight__label">Seed ask (illustrative)</span>
-            <span class="funds-highlight__value">₹50L</span>
-            <span class="funds-highlight__note">~$60K USD — SportMatch deck</span>
+            <span class="funds-highlight__label">Year 1 startup budget</span>
+            <span class="funds-highlight__value">€180k</span>
+            <span class="funds-highlight__note">Illustrative total — app, events, marketing, legal, lean team</span>
           </div>
           <div>
-            <span class="funds-highlight__label">Launch budget</span>
-            <span class="funds-highlight__value">₹20L</span>
-            <span class="funds-highlight__note">Lean plan — SportSync Connect</span>
+            <span class="funds-highlight__label">Break-even cue</span>
+            <span class="funds-highlight__value">~6.8k</span>
+            <span class="funds-highlight__note">Paying users at ~€37.5k/mo fixed costs &amp; ~€5.50 ARPU — plan pegs ~month 14</span>
           </div>
         </div>
         <div class="funds-bars" appScrollReveal [appScrollRevealDelay]="80">
           <div class="funds-bar">
-            <span class="funds-bar__label">Product &amp; AI</span>
+            <span class="funds-bar__label">App (iOS, Android, web MVP)</span>
             <div class="funds-bar__track"><div class="funds-bar__fill" style="width: 40%"></div></div>
-            <span class="funds-bar__pct">40%</span>
+            <span class="funds-bar__pct">40% · €72k</span>
           </div>
           <div class="funds-bar">
-            <span class="funds-bar__label">User acquisition</span>
-            <div class="funds-bar__track"><div class="funds-bar__fill funds-bar__fill--2" style="width: 35%"></div></div>
-            <span class="funds-bar__pct">35%</span>
+            <span class="funds-bar__label">Talent showcases (5 cities)</span>
+            <div class="funds-bar__track"><div class="funds-bar__fill funds-bar__fill--2" style="width: 20%"></div></div>
+            <span class="funds-bar__pct">20% · €36k</span>
           </div>
           <div class="funds-bar">
-            <span class="funds-bar__label">Team &amp; operations</span>
-            <div class="funds-bar__track"><div class="funds-bar__fill funds-bar__fill--3" style="width: 25%"></div></div>
-            <span class="funds-bar__pct">25%</span>
+            <span class="funds-bar__label">Marketing &amp; digital ads</span>
+            <div class="funds-bar__track"><div class="funds-bar__fill funds-bar__fill--3" style="width: 17%"></div></div>
+            <span class="funds-bar__pct">17% · €30k</span>
+          </div>
+          <div class="funds-bar">
+            <span class="funds-bar__label">Operations &amp; legal (GDPR, incorporation)</span>
+            <div class="funds-bar__track"><div class="funds-bar__fill" style="width: 14%"></div></div>
+            <span class="funds-bar__pct">14% · €25k</span>
+          </div>
+          <div class="funds-bar">
+            <span class="funds-bar__label">Team (2 founders + 1 dev intern)</span>
+            <div class="funds-bar__track"><div class="funds-bar__fill funds-bar__fill--2" style="width: 5%"></div></div>
+            <span class="funds-bar__pct">5% · €10k</span>
+          </div>
+          <div class="funds-bar">
+            <span class="funds-bar__label">Contingency</span>
+            <div class="funds-bar__track"><div class="funds-bar__fill funds-bar__fill--3" style="width: 4%"></div></div>
+            <span class="funds-bar__pct">4% · €7k</span>
           </div>
         </div>
         <div class="funds-connect card card--inset" appScrollReveal [appScrollRevealDelay]="140">
-          <h3>SportSync ₹20L breakdown</h3>
+          <h3>Funding timeline</h3>
           <ul class="bullets bullets--compact">
-            <li><strong>₹8L (40%)</strong> — App development (iOS / Android / web)</li>
-            <li><strong>₹5L (25%)</strong> — Ten campus showcases</li>
-            <li><strong>₹4L (20%)</strong> — Marketing, ads &amp; ambassadors</li>
-            <li><strong>₹2L (10%)</strong> — Operations, team, legal</li>
-            <li><strong>₹1L (5%)</strong> — Buffer</li>
+            <li><strong>Bootstrap Y1:</strong> founder capital + Italian innovation grants (e.g. MISE Smart&amp;Start, Invitalia)</li>
+            <li><strong>Seed (Y1–2):</strong> ~€500k from angels &amp; sports VCs for national marketing &amp; AI matching</li>
+            <li><strong>Series A (Y3):</strong> €3–5M for EU expansion (Spain, France, Germany football markets)</li>
+            <li><strong>Entity:</strong> Innovative SRL (€1k min share capital) + MISE innovative startup status track</li>
           </ul>
         </div>
       </div>
       <p class="section__footnote muted" appScrollReveal>
-        Revenue milestones (deck): Year 1 <strong>₹75L</strong> → Year 2 <strong>₹3Cr</strong> → Year 3 <strong>₹8Cr</strong> (targets for planning, not guarantees).
+        Three-year sketch in the plan: users and revenue scale toward <strong>€5.2M</strong> gross in Year 3 — illustrative only.
       </p>
     </section>
 
@@ -441,22 +491,22 @@
       <div class="vision__inner" appScrollReveal>
         <h2>Our vision</h2>
         <p class="vision__quote">
-          Turn every smartphone into a <strong>global scouting network</strong>. Democratize discovery so the next
-          champion — on the pitch or in esports — never goes unnoticed.
+          Digitize Italy’s antiquated scouting stack so merit — not postcode or budget — decides who gets seen.
+          With <strong>21M+</strong> active participants and sports tech growing at <strong>21.8% CAGR</strong>, the window for a dedicated, affordable athlete network is open.
         </p>
         <p class="vision__tag">
-          Let’s make every athlete shine. SportMatch × SportSync Connect — unite talent and opportunity.
+          SportSync Connect Italia — <strong>where champions are discovered</strong>.
         </p>
       </div>
     </section>
 
     <section id="cta" class="cta">
       <div class="cta__panel" appScrollReveal>
-        <h2>Be part of the next breakthrough story</h2>
-        <p>Early access for athletes, coaches, clubs, and partners. Thank you — together we redefine sports.</p>
+        <h2>Join the Italia waitlist</h2>
+        <p>Athletes, clubs, academies, and partners — early access for the first wave across Milan, Rome, and beyond.</p>
         <form class="cta__form" (submit)="$event.preventDefault()">
           <label class="sr-only" for="email">Email</label>
-          <input id="email" type="email" autocomplete="email" placeholder="you@club.com" />
+          <input id="email" type="email" autocomplete="email" placeholder="you@club.it" />
           <button type="submit" class="btn btn--primary">Request invite</button>
         </form>
       </div>
@@ -464,6 +514,6 @@
   </main>
 
   <footer class="footer">
-    <p>© {{ year }} SportMatch · SportSync Connect · Landing for illustrative purposes</p>
+    <p>© {{ year }} SportSync Connect Italia · Confidential overview · Landing for illustrative purposes</p>
   </footer>
 </div>
